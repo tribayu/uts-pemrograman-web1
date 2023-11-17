@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="me.jpeg" alt="Foto Saya" />
+      <h1>Muhammad Tri Bayu Sutiono</h1>
+      <ul class="social">
+        <li><a href="https://facebook.com/">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://instagram.com/">Instagram</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <section class="hero">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya adalah seorang mahasiswa Teknik Informatika yang tertarik dengan
+          pengembangan web, pemrograman, dan teknologi terkini.
+        </p>
+        <p>Saya sedang belajar dalam HTML, CSS, JavaScript.</p>
+        <p>
+          Tujuan saya adalah terus belajar dan tumbuh dalam dunia teknologi.
+        </p>
+      </section>
+      <section class="about-me">
+        <p>
+          Saya adalah seorang mahasiswa Teknik Informatika yang tertarik dengan
+          pengembangan web, pemrograman, dan teknologi terkini.
+        </p>
+        <p>Saya sedang belajar dalam HTML, CSS, JavaScript.</p>
+        <p>
+          Tujuan saya adalah terus belajar dan tumbuh dalam dunia teknologi.
+          <button id="toggleAbout">tampilkan/sembunyikan detail</button>
+        </p>
+      </section>
+
+      <section class="project">
+        <h2>project</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/tribayu/tugasweb1">project 1</a>website
+            pariwisata
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2></h2>
+        <p>anda dapat menghubungi</p>
+        <ul>
+          <li>nomor whatsapp: 085702389010</li>
+          <li><a href="https://linkedin.com/in/tribayu">LinkedIn</a></li>
+          <li><a href="https://github.com/tribayu">GitHub</a></li>
+        </ul>
+      </section>
+      <script>
+        const aboutSection = document.querySelector(".about-me");
+        const toggleButton = document.getElementById("toggleAbout");
+
+        toggleButton.addEventListener("click", () => {
+          aboutSection.classList.toggle("show-details");
+        });
+      </script>
+    </div>
+  </body>
+</html>
